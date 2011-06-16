@@ -1,0 +1,69 @@
+Large Scale Distributed Computing
+
+Certified Cloud Application Deployment
+
+Unsere Idee
+	Eine öffentliche Stelle (C3Gov) stellt eine Registry zur Verfügung. In
+	dieser Registry können sich Cloud-Provider/Broker registrieren. Zuvor
+	müssen jedoch schon Zertifizierungsstellen (und damit Zertifikate) in
+	der Registry hinterlegt sein. Dies geschieht "offline". D.h. eine
+	Zertifizierungsstelle stellt den Antrag in die Registry aufgenommen zu
+	werden. Anschließend prüft C3Gov den Antrag und nimmt entsprechende
+	Zertifikate auf. 
+	Für diese Zertifikate werden sogenannte CertificateTemplates erstellt
+	und hinterlegt. Ein CertificateTemplate gibt an welche Möglichkeiten das
+	Zertifikat garantiert. Also z.B. ob für die Datensicherheit 2 getrennte
+	Speicherorte existieren.
+	Sind jetzt Zertifizierungsstellen registriert und gibt es daher auch schon
+	CertificateTemplates, können sich Cloud-Provider/Broker registrieren. 
+	Diese geben bei der Registrierung an mit welchem Zertifikat sie
+	zertifiziert sind. Intern werden dann automatisch den Providern die
+	entsprechenden Templates zugeordnet.
+	
+	Der folgende Teil wird von der Beispiel-Anwendung abgedeckt:
+	Will jemand seine Anwendung deployen kann er die Registry verwenden um
+	nach seinen speziellen Sicherheitskriterien Cloud Provider zu finden.
+	Das Zusammenstellen der Kriterien erfolgt interaktiv (cla-cmdtool). Die
+	Registry (cla-registry) generiert daraufhin eine Liste an Providern. Aus
+	diesen sucht sich der Anwender einen Anbieter aus und deployed die 
+	Anwendung.
+	Ende Abdeckung Beispiel Anwendung.
+	
+	Damit ein Deployment bis zum Cloud Provider funktioniert muss ein Cloud
+	Provider Plugins für C3Gov zur Verfügung stellen. Das jeweilige Plugin
+	übernimmt dann das eigentliche Deployment der Anwendung zum Cloud
+	Provider.
+
+Schema
+	Meta Information
+		Application Info: Name, Version, etc.
+	Runtime (AppEngine, EC2, J2E, ...)
+	Functional Requirements
+		Monitoring
+			Logging
+			Alerting
+		Maintenance access (SSH, RDP, ...)
+		Firewall (properties: ports)
+		Data
+			Location Awareness
+			Cipher
+			Backup (Location awareness)
+			Data slicing
+		Application
+			Location Awareness
+			Isolation/Sandbox
+	Nonfunctional Requirements
+		Roles
+		Availability
+		Response times
+		Down times
+		SSL-Certificates
+		
+Präsentation
+	Problemstellung
+	Was gibt es bereits?
+	Unsere Idee
+		Voraussetzungen
+		C3Gov (C3 Architektur aus ihrem Paper umgesetzt in einer behördl. Organisation)
+	Live Demo: ganzen Prozess Ablauf (Registrierung u. Deployment)
+	Aussichten
