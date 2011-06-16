@@ -1,21 +1,21 @@
-Large Scale Distributed Computing
+ï»¿Large Scale Distributed Computing
 
 Certified Cloud Application Deployment
 
 Unsere Idee
-	Eine öffentliche Stelle (C3Gov) stellt eine Registry zur Verfügung. In
-	dieser Registry können sich Cloud-Provider/Broker registrieren. Zuvor
-	müssen jedoch schon Zertifizierungsstellen (und damit Zertifikate) in
+	Eine Ã¶ffentliche Stelle (C3Gov) stellt eine Registry zur VerfÃ¼gung. In
+	dieser Registry kÃ¶nnen sich Cloud-Provider/Broker registrieren. Zuvor
+	mÃ¼ssen jedoch schon Zertifizierungsstellen (und damit Zertifikate) in
 	der Registry hinterlegt sein. Dies geschieht "offline". D.h. eine
 	Zertifizierungsstelle stellt den Antrag in die Registry aufgenommen zu
-	werden. Anschließend prüft C3Gov den Antrag und nimmt entsprechende
+	werden. AnschlieÃŸend prÃ¼ft C3Gov den Antrag und nimmt entsprechende
 	Zertifikate auf. 
-	Für diese Zertifikate werden sogenannte CertificateTemplates erstellt
-	und hinterlegt. Ein CertificateTemplate gibt an welche Möglichkeiten das
-	Zertifikat garantiert. Also z.B. ob für die Datensicherheit 2 getrennte
+	FÃ¼r diese Zertifikate werden sogenannte CertificateTemplates erstellt
+	und hinterlegt. Ein CertificateTemplate gibt an welche MÃ¶glichkeiten das
+	Zertifikat garantiert. Also z.B. ob fÃ¼r die Datensicherheit 2 getrennte
 	Speicherorte existieren.
 	Sind jetzt Zertifizierungsstellen registriert und gibt es daher auch schon
-	CertificateTemplates, können sich Cloud-Provider/Broker registrieren. 
+	CertificateTemplates, kÃ¶nnen sich Cloud-Provider/Broker registrieren. 
 	Diese geben bei der Registrierung an mit welchem Zertifikat sie
 	zertifiziert sind. Intern werden dann automatisch den Providern die
 	entsprechenden Templates zugeordnet.
@@ -30,8 +30,8 @@ Unsere Idee
 	Ende Abdeckung Beispiel Anwendung.
 	
 	Damit ein Deployment bis zum Cloud Provider funktioniert muss ein Cloud
-	Provider Plugins für C3Gov zur Verfügung stellen. Das jeweilige Plugin
-	übernimmt dann das eigentliche Deployment der Anwendung zum Cloud
+	Provider Plugins fÃ¼r C3Gov zur VerfÃ¼gung stellen. Das jeweilige Plugin
+	Ã¼bernimmt dann das eigentliche Deployment der Anwendung zum Cloud
 	Provider.
 
 Schema
@@ -59,11 +59,11 @@ Schema
 		Down times
 		SSL-Certificates
 		
-Präsentation
+PrÃ¤sentation
 	Problemstellung
 	Was gibt es bereits?
 	Unsere Idee
 		Voraussetzungen
-		C3Gov (C3 Architektur aus ihrem Paper umgesetzt in einer behördl. Organisation)
+		C3Gov (C3 Architektur aus ihrem Paper umgesetzt in einer behÃ¶rdl. Organisation)
 	Live Demo: ganzen Prozess Ablauf (Registrierung u. Deployment)
 	Aussichten
